@@ -3,17 +3,21 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "start": "npx nodemon -r dotenv/config ./bin/www"
+        "start": "npx nodemon -r dotenv/config ./bin/www",
+        "generate:doc": "jsdoc -r routes"
     },
     "dependencies": {
         "cookie-parser": "~1.4.4",
         "debug": "~2.6.9",
         "dotenv": "^10.0.0",
         "ejs": "~2.6.1",
-        "express": "~4.16.1",
+        "express": "^4.17.1",
         "http-errors": "~1.6.3",
+        "jsdoc": "^3.6.7",
         "morgan": "~1.9.1",
         "sequelize": "^6.6.2",
-        "sqlite3": "^5.0.2"
+        "sqlite3": "^5.0.2",
+        "swagger-autogen": "^2.10.0",
+        "swagger-ui-express": "^4.1.6"
     }
 }
